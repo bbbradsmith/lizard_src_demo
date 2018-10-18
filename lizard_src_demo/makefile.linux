@@ -1,0 +1,63 @@
+SDL_CFLAGS := $(shell SDL2/build/bin/sdl2-config --cflags)
+SDL_LDFLAGS := $(shell SDL2/build/bin/sdl2-config --static-libs)
+
+CXX=g++
+CXXFLAGS= \
+	-ISDL2/build/include/SDL2 \
+	-c \
+	-std=c++11 \
+	-fwrapv \
+	-static-libgcc \
+	-static-libstdc++ \
+	$(SDL_CFLAGS)
+
+LDFLAGS= \
+	-LSDL2/build/lib \
+	-lSDL2 \
+	-lSDL2main \
+	-static-libgcc \
+	-static-libstdc++ \
+	$(SDL_LDFLAGS)
+
+SOURCES = \
+	assets/export/data.cpp \
+	assets/export/data_music.cpp \
+	assets/export/text_default.cpp \
+	lizard_audio.cpp \
+	lizard_config.cpp \
+	lizard_dogs.cpp \
+	lizard_game.cpp \
+	lizard_lizard.cpp \
+	lizard_main.cpp \
+	lizard_options.cpp \
+	lizard_ppu.cpp \
+	lizard_text.cpp \
+	lizard_linux.cpp
+
+OBJECTS = $(SOURCES:%.cpp=temp/%.o)
+EXECUTABLE = temp/lizard_demo
+
+all: directories $(OBJECTS) $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CXX) -o $(EXECUTABLE) $(OBJECTS) $(LDFLAGS)
+
+temp/%.o: %.cpp
+	$(CXX) $(CXXFLAGS) $< -o $@
+
+temp/assets/export/%.o: %.cpp
+	$(CXX) $(CXXFLAGS) $< -o $@
+
+directories:
+	mkdir -p temp
+	mkdir -p temp/assets
+	mkdir -p temp/assets/export
+
+debug: CXXFLAGS += -g -DDEBUG -D_DEBUG
+debug: LDFLAGS += -g
+debug: all
+
+clean:
+	rm $(OBJECTS)
+	rm $(EXECUTABLE)
+

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\export\checkpoints.s" />
+    <None Include="assets\export\chr.s" />
+    <None Include="assets\export\data_music.s" />
+    <None Include="assets\export\names.s" />
+    <None Include="assets\export\palette.s" />
+    <None Include="assets\export\password.csv" />
+    <None Include="assets\export\room0.s" />
+    <None Include="assets\export\room1.s" />
+    <None Include="assets\export\room2.s" />
+    <None Include="assets\export\room3.s" />
+    <None Include="assets\export\room4.s" />
+    <None Include="assets\export\sprite.s" />
+    <None Include="assets\export\text_english.s" />
+    <None Include="assets\export\text_set.s" />
+    <None Include="make_nes.bat" />
+    <None Include="nes\bank0.s" />
+    <None Include="nes\bank1.s" />
+    <None Include="nes\bank2.s" />
+    <None Include="nes\bank3.s" />
+    <None Include="nes\bank32k.cfg" />
+    <None Include="nes\bank4.s" />
+    <None Include="nes\bank5.s" />
+    <None Include="nes\bank6.s" />
+    <None Include="nes\bank7.s" />
+    <None Include="nes\bank8.s" />
+    <None Include="nes\bank9.s" />
+    <None Include="nes\bankA.s" />
+    <None Include="nes\bankB.s" />
+    <None Include="nes\bankC.s" />
+    <None Include="nes\bankD.s" />
+    <None Include="nes\bankE.s" />
+    <None Include="nes\bankF.s" />
+    <None Include="nes\chr.s" />
+    <None Include="nes\collide.s" />
+    <None Include="nes\common.s" />
+    <None Include="nes\common_df.s" />
+    <None Include="nes\common_ef.s" />
+    <None Include="nes\compile_nes.bat" />
+    <None Include="nes\compile_nsf.bat" />
+    <None Include="nes\compile_nsfe.bat" />
+    <None Include="nes\compile_remix.bat" />
+    <None Include="nes\detect_pal.s" />
+    <None Include="nes\dogs0.s" />
+    <None Include="nes\dogs1.s" />
+    <None Include="nes\dogs2.s" />
+    <None Include="nes\dogs_common.s" />
+    <None Include="nes\dogs_inc.s" />
+    <None Include="nes\dogs_table.s" />
+    <None Include="nes\dogs_tables.s" />
+    <None Include="nes\draw.s" />
+    <None Include="nes\enums.s" />
+    <None Include="nes\extra_a.s" />
+    <None Include="nes\extra_b.s" />
+    <None Include="nes\fceux_symbols.py" />
+    <None Include="nes\fixed.s" />
+    <None Include="nes\header.cfg" />
+    <None Include="nes\header.s" />
+    <None Include="nes\lizard.s" />
+    <None Include="nes\main.s" />
+    <None Include="nes\music.s" />
+    <None Include="nes\nsf.cfg" />
+    <None Include="nes\nsf.s" />
+    <None Include="nes\nsfe.cfg" />
+    <None Include="nes\nsfe.s" />
+    <None Include="nes\ram.s" />
+    <None Include="nes\room.s" />
+    <None Include="nes\sound_common.s" />
+    <None Include="nes\text.s" />
+    <None Include="nes\version.s" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\export\music_stats.txt" />
+    <Text Include="assets\export\stats.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{29412191-1FEC-4A85-99F8-2FE61F24D791}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakePreprocessorDefinitions>
+    </NMakePreprocessorDefinitions>
+    <OutDir>$(SolutionDir)nes\temp\</OutDir>
+    <IntDir>$(SolutionDir)nes\temp</IntDir>
+    <NMakeBuildCommandLine>$(SolutionDir)make_nes.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(SolutionDir)make_nes.bat</NMakeReBuildCommandLine>
+    <NMakeOutput>$(SolutionDir)nes\temp\lizard.nes</NMakeOutput>
+    <NMakeIncludeSearchPath>$(SoludionDir)nes\</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakePreprocessorDefinitions>
+    </NMakePreprocessorDefinitions>
+    <OutDir>$(SolutionDir)nes\temp\</OutDir>
+    <IntDir>$(SolutionDir)nes\temp</IntDir>
+    <NMakeBuildCommandLine>$(SolutionDir)make_nes.bat</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(SolutionDir)make_nes.bat</NMakeReBuildCommandLine>
+    <NMakeOutput>$(SolutionDir)nes\temp\lizard.nes</NMakeOutput>
+    <NMakeIncludeSearchPath>$(SoludionDir)nes\</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

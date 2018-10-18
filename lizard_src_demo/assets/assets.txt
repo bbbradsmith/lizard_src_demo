@@ -1,0 +1,8 @@
+The assets/ folder is not included under the same license as the Lizard source code,
+so is not eligible to be included here on github.
+
+To obtain the assets/ data for reference, download lizard_src_demo.zip from:
+https://rainwarrior.itch.io/lizard
+
+
+http://lizardnes.com

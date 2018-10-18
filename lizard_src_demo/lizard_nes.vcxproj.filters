@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Build">
+      <UniqueIdentifier>{4f30c5d5-089d-4a33-8c97-88a3496e7e10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nes\bank0.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bank1.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bank2.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bank3.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bank4.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bank5.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bank6.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bank7.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\detect_pal.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\draw.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\fixed.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\header.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\lizard.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\main.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\music.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\nsf.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\nsfe.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\ram.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\room.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\text.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\version.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\checkpoints.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\chr.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\data_music.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\names.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\palette.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\room0.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\room1.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\room2.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\room3.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\room4.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\sprite.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\password.csv">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="nes\bank32k.cfg">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="nes\header.cfg">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="nes\nsf.cfg">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="nes\nsfe.cfg">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="nes\fceux_symbols.py">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="nes\compile_nes.bat">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="nes\compile_nsf.bat">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="nes\compile_nsfe.bat">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="nes\compile_remix.bat">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="make_nes.bat">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="nes\collide.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\enums.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\common.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\dogs_common.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\dogs_table.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\dogs_tables.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\dogs2.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bank8.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bank9.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bankA.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bankB.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bankC.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bankD.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bankE.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\bankF.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\chr.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\dogs_inc.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\sound_common.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="assets\export\text_set.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="assets\export\text_english.s">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="nes\dogs0.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\dogs1.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\extra_a.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\extra_b.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\common_df.s">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="nes\common_ef.s">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\export\music_stats.txt">
+      <Filter>Generated</Filter>
+    </Text>
+    <Text Include="assets\export\stats.txt">
+      <Filter>Generated</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

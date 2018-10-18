@@ -1,0 +1,1 @@
+start Release\lizard_tool.exe assets\campaign.lpk

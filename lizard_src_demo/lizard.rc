@@ -1,0 +1,32 @@
+// win32 resource file
+
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+
+#include "lizard_version.h"
+
+#define IDI_ICON 1
+IDI_ICON  ICON  "lizard.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     VERSION_MAJOR,VERSION_MINOR,VERSION_BETA,VERSION_REVISED
+FILEOS         	VOS__WINDOWS32
+FILETYPE       	VFT_APP
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904E4"
+		BEGIN
+			VALUE "FileDescription",  "lizard demo game"
+			VALUE "FileVersion",      VERSION_STRING
+			VALUE "OriginalFilename", "lizard_demo.exe"
+			VALUE "ProductName",      "lizard demo"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x409, 1252
+	END
+END
+
+// end of file

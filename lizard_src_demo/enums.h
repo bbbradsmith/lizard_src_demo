@@ -1,0 +1,306 @@
+#pragma once
+// Lizard
+// Copyright Brad Smith 2018
+// http://lizardnes.com
+
+namespace Game {
+
+const int GAME_VERSION = 0;
+#define BETA 0
+#define FASTBOSS 0
+
+enum PadEnum
+{
+	PAD_A      = 1<<0,
+	PAD_B      = 1<<1,
+	PAD_SELECT = 1<<2,
+	PAD_START  = 1<<3,
+	PAD_U      = 1<<4,
+	PAD_D      = 1<<5,
+	PAD_L      = 1<<6,
+	PAD_R      = 1<<7,
+};
+
+enum NMIEnum
+{
+	NMI_NONE   = 0,
+	NMI_READY  = 1,
+	NMI_ROW    = 2,
+	NMI_DOUBLE = 3,
+	NMI_WIDE   = 4,
+	NMI_STREAM = 5,
+	NMI_OFF    = 6,
+};
+
+enum LizardEnum
+{
+	LIZARD_OF_KNOWLEDGE = 0,
+	LIZARD_OF_BOUNCE,
+	LIZARD_OF_SWIM,
+	LIZARD_OF_HEAT,
+	LIZARD_OF_SURF,
+	LIZARD_OF_PUSH,
+	LIZARD_OF_STONE,
+	LIZARD_OF_COFFEE,
+	LIZARD_OF_LOUNGE,
+	LIZARD_OF_DEATH,
+	LIZARD_OF_BEYOND,
+	LIZARD_OF_COUNT
+};
+
+enum DogEnum
+{
+	// bank0 ($E)
+	DOG_NONE = 0,
+	DOG_DOOR,
+	DOG_PASS,
+	DOG_PASS_X,
+	DOG_PASS_Y,
+	DOG_PASSWORD_DOOR,
+	DOG_LIZARD_EMPTY_LEFT,
+	DOG_LIZARD_EMPTY_RIGHT,
+	DOG_LIZARD_DISMOUNTER,
+	DOG_SPLASHER,
+	DOG_DISCO,
+	DOG_WATER_PALETTE,
+	DOG_GRATE,
+	DOG_GRATE90,
+	DOG_WATER_FLOW,
+	DOG_RAINBOW_PALETTE,
+	DOG_PUMP,
+	DOG_SECRET_STEAM,
+	DOG_CEILING_FREE,
+	DOG_BLOCK_COLUMN,
+	DOG_SAVE_STONE,
+	DOG_COIN,
+	DOG_MONOLITH,
+	DOG_ICEBLOCK,
+	DOG_VATOR,
+	DOG_NOISE,
+	DOG_SNOW,
+	DOG_RAIN,
+	DOG_RAIN_BOSS,
+	DOG_DRIP,
+	DOG_HOLD_SCREEN,
+	DOG_BOSS_DOOR,
+	DOG_BOSS_DOOR_RAIN,
+	DOG_BOSS_DOOR_EXIT,
+	DOG_BOSS_DOOR_EXEUNT,
+	DOG_BOSS_RUSH,
+	DOG_OTHER,
+	DOG_ENDING,
+	DOG_RIVER_EXIT,
+	DOG_BONES,
+	DOG_EASY,
+	DOG_SPRITE0,
+	DOG_SPRITE2,
+	DOG_HINTD,
+	DOG_HINTU,
+	DOG_HINTL,
+	DOG_HINTR,
+	DOG_HINT_PENGUIN,
+	DOG_BIRD,
+	DOG_FROG,
+	DOG_GROG,
+	DOG_PANDA,
+	DOG_GOAT,
+	DOG_DOG,
+	DOG_WOLF,
+	DOG_OWL,
+	DOG_ARMADILLO,
+	DOG_BEETLE,
+	DOG_SKEETLE,
+	DOG_SEEKER_FISH,
+	DOG_MANOWAR,
+	DOG_SNAIL,
+	DOG_SNAPPER,
+	DOG_VOIDBALL,
+	DOG_BALLSNAKE,
+	DOG_MEDUSA,
+	DOG_PENGUIN,
+	DOG_MAGE,
+	DOG_MAGE_BALL,
+	DOG_GHOST,
+	DOG_PIGGY,
+	DOG_PANDA_FIRE,
+	DOG_GOAT_FIRE,
+	DOG_DOG_FIRE,
+	DOG_OWL_FIRE,
+	DOG_MEDUSA_FIRE,
+	DOG_ARROW_LEFT,
+	DOG_ARROW_RIGHT,
+	DOG_SAW,
+	DOG_STEAM,
+	DOG_SPARKD,
+	DOG_SPARKU,
+	DOG_SPARKL,
+	DOG_SPARKR,
+	DOG_FROB_FLY,
+	// bank1 ($D)
+	DOG_PASSWORD,
+	DOG_LAVA_PALETTE,
+	DOG_WATER_SPLIT,
+	DOG_BLOCK,
+	DOG_BLOCK_ON,
+	DOG_BLOCK_OFF,
+	DOG_DRAWBRIDGE,
+	DOG_ROPE,
+	DOG_BOSS_FLAME,
+	DOG_RIVER,
+	DOG_RIVER_ENTER,
+	DOG_SPRITE1,
+	DOG_BEYOND_STAR,
+	DOG_BEYOND_END,
+	DOG_OTHER_END_LEFT,
+	DOG_OTHER_END_RIGHT,
+	DOG_PARTICLE,
+	DOG_INFO,
+	DOG_DIAGNOSTIC,
+	DOG_METRICS,
+	DOG_SUPER_MOOSE,
+	DOG_BRAD_DUNGEON,
+	DOG_BRAD,
+	DOG_HEEP_HEAD,
+	DOG_HEEP,
+	DOG_HEEP_TAIL,
+	DOG_LAVA_LEFT,
+	DOG_LAVA_RIGHT,
+	DOG_LAVA_LEFT_WIDE,
+	DOG_LAVA_RIGHT_WIDE,
+	DOG_LAVA_LEFT_WIDER,
+	DOG_LAVA_RIGHT_WIDER,
+	DOG_LAVA_DOWN,
+	DOG_LAVA_POOP,
+	DOG_LAVA_MOUTH,
+	DOG_BOSSTOPUS,
+	DOG_BOSSTOPUS_EGG,
+	DOG_CAT,
+	DOG_CAT_SMILE,
+	DOG_CAT_SPARKLE,
+	DOG_CAT_STAR,
+	DOG_RACCOON,
+	DOG_RACCOON_LAUNCHER,
+	DOG_RACCOON_LAVABALL,
+	DOG_RACCOON_VALVE,
+	DOG_FROB,
+	DOG_FROB_HAND_LEFT,
+	DOG_FROB_HAND_RIGHT,
+	DOG_FROB_ZAP,
+	DOG_FROB_TONGUE,
+	DOG_FROB_BLOCK,
+	DOG_FROB_PLATFORM,
+	DOG_QUEEN,
+	DOG_HARE,
+	DOG_HARECICLE,
+	DOG_HAREBURN,
+	DOG_ROCK,
+	DOG_LOG,
+	DOG_DUCK,
+	DOG_RAMP,
+	DOG_RIVER_SEEKER,
+	DOG_BARREL,
+	DOG_WAVE,
+	DOG_SNEK_LOOP,
+	DOG_SNEK_HEAD,
+	DOG_SNEK_TAIL,
+	DOG_RIVER_LOOP,
+	DOG_WATT,
+	DOG_WATERFALL,
+	// bank2 ($F)
+	DOG_TIP,
+	DOG_WIQUENCE,
+	DOG_WITCH,
+	DOG_BOOK,
+	// count
+	DOG_COUNT
+};
+
+const int DOG_BANK0_START = DOG_NONE;
+const int DOG_BANK1_START = DOG_PASSWORD;
+const int DOG_BANK2_START = DOG_TIP;
+
+enum FlagEnum
+{
+	FLAG_NONE              = 0,
+	FLAG_LOUNGE_ICE0       = 1,
+	FLAG_LOUNGE_ICE1       = 2,
+	FLAG_LOUNGE_ICE2       = 3,
+	FLAG_LOUNGE_ICE3       = 4,
+	FLAG_LOUNGE_ICE4       = 5,
+	FLAG_LOUNGE_ICE5       = 6,
+	FLAG_LOUNGE_ICE6       = 7,
+	FLAG_BLOCK_PUSH        = 8,
+	FLAG_EYESIGHT          = 9,
+	FLAG_BOSS_0_MOUNTAIN   = 10,
+	FLAG_BOSS_1_RIVER      = 11,
+	FLAG_BOSS_2_WATER      = 12,
+	FLAG_BOSS_3_VOLCANO    = 13,
+	FLAG_BOSS_4_PALACE     = 14,
+	FLAG_BOSS_5_VOID       = 15,
+	FLAG_DELETED           = 16,
+	FLAG_BLOCK_DRAWBRIDGE  = 17,
+	FLAG_BLOCK_INFO        = 18,
+	FLAG_ROPE_0            = 19,
+	FLAG_ROPE_1            = 20,
+	FLAG_ROPE_2            = 21,
+	FLAG_ROPE_3            = 22,
+	FLAG_BRIDGE            = 23,
+	FLAG_COUNT
+};
+
+// NOTE: items placed in the tool specify their flags by number,
+//       do not reassign flag numbers without finding their use in the game first
+
+const int DISMOUNT_SLOT        = 15;
+const int SPLASHER_SLOT        = 10;
+const int OTHER_BONES_SLOT     = 15;
+const int HOLD_SLOT            = 15;
+const int RIVER_SLOT           = 0;
+const int BEYOND_STAR_SLOT     = 5;
+const int BOSS_DOOR_RAIN_SLOT  = 0;
+const int FROB_FLY_SLOT        = 3;
+const int HARE_SLOT            = 1;
+const int WIQUENCE_SLOT        = 0;
+const int WITCH_SLOT           = 12;
+const int BOOK_SLOT            = 13;
+const int TIP_SLOT             = 1;
+
+const int RIVER_SCROLL_A0      = 0;
+const int RIVER_SCROLL_A1      = 1;
+const int RIVER_SCROLL_B0      = 2;
+const int RIVER_SCROLL_B1      = 3;
+const int RIVER_SPLASH_TIME    = 4;
+const int RIVER_SPLASH_FLIP    = 5;
+const int RIVER_OVERLAP        = 6;
+
+const int PASSWORD_VALUE       = 1;
+const int BEYOND_STAR_FADE     = 2;
+const int BEYOND_STAR_DIE      = 3;
+const int SAVE_STONE_ON        = 0;
+const int MAGE_BALL_MODE       = 0;
+const int RACCOON_VALVE_LOCK   = 1;
+const int FROB_SCREEN          = 0;
+const int FROB_STATE           = 3;
+const int FROB_NEXT            = 4;
+const int FROB_FLY_LOWER       = 10;
+const int WIQUENCE_HELIX       = 1;
+const int WIQUENCE_TIME        = 4;
+const int WITCH_ANIM           = 0;
+const int WITCH_SPRITE         = 2;
+const int WITCH_RISE           = 3;
+const int BOOK_HUMAN           = 8;
+
+const int PIGGY_BURST = 125;
+
+const int FROG_FRACTION_COUNT = 69; // bones this many frogs for the "frog fractions" egg
+// there are ~127 frogs in total, but a few are inaccessible
+// 100 seems a good indication that you've been deliberately bonesing frogs?
+// lowered it to 69 to make it slightly easier to hit
+
+const int TIP_MAX = 6;
+
+const int TOOL_MUSIC_COUNT = 19;
+
+} // namespace Game
+
+// end of file

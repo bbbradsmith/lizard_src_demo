@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		970D550D1EFCA4FC004FD238 /* text_default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 970D550C1EFCA4FC004FD238 /* text_default.cpp */; };
+		97152EC31D9DBA5E006833C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97152EC21D9DBA5E006833C3 /* Assets.xcassets */; };
+		97152EDA1D9DBBBB006833C3 /* lizard_audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152ECF1D9DBBBB006833C3 /* lizard_audio.cpp */; };
+		97152EDC1D9DBBBB006833C3 /* lizard_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152ED11D9DBBBB006833C3 /* lizard_config.cpp */; };
+		97152EDD1D9DBBBB006833C3 /* lizard_dogs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152ED21D9DBBBB006833C3 /* lizard_dogs.cpp */; };
+		97152EDE1D9DBBBB006833C3 /* lizard_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152ED31D9DBBBB006833C3 /* lizard_game.cpp */; };
+		97152EDF1D9DBBBB006833C3 /* lizard_lizard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152ED41D9DBBBB006833C3 /* lizard_lizard.cpp */; };
+		97152EE11D9DBBBB006833C3 /* lizard_mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152ED61D9DBBBB006833C3 /* lizard_mac.cpp */; };
+		97152EE21D9DBBBB006833C3 /* lizard_options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152ED71D9DBBBB006833C3 /* lizard_options.cpp */; };
+		97152EE31D9DBBBB006833C3 /* lizard_ppu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152ED81D9DBBBB006833C3 /* lizard_ppu.cpp */; };
+		97152EE41D9DBBBB006833C3 /* lizard_text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152ED91D9DBBBB006833C3 /* lizard_text.cpp */; };
+		97152EEB1D9DBC9C006833C3 /* data_music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152EE91D9DBC9C006833C3 /* data_music.cpp */; };
+		97152EEC1D9DBC9C006833C3 /* data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97152EEA1D9DBC9C006833C3 /* data.cpp */; };
+		973BF9C72038CA3D00D259BE /* lizard_mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 973BF9C62038CA3D00D259BE /* lizard_mac.m */; };
+		976CAEB1200DF98800956CCB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 976CAEB0200DF98800956CCB /* CoreVideo.framework */; };
+		97AD35A41D9DBF4400BC47B3 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AD35A21D9DBF4400BC47B3 /* libSDL2.a */; };
+		97AD35A51D9DBF4400BC47B3 /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AD35A31D9DBF4400BC47B3 /* libSDL2main.a */; };
+		97E6C5731D9DD1EC0007C4B4 /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C5721D9DD1EC0007C4B4 /* libobjc.dylib */; };
+		97E6C5751D9DD1F90007C4B4 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C5741D9DD1F90007C4B4 /* libiconv.dylib */; };
+		97E6C5771D9DD20F0007C4B4 /* libm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C5761D9DD20F0007C4B4 /* libm.dylib */; };
+		97E6C5801D9DD2600007C4B4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C5781D9DD2600007C4B4 /* AudioToolbox.framework */; };
+		97E6C5811D9DD2600007C4B4 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C5791D9DD2600007C4B4 /* AudioUnit.framework */; };
+		97E6C5821D9DD2600007C4B4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C57A1D9DD2600007C4B4 /* Carbon.framework */; };
+		97E6C5831D9DD2600007C4B4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C57B1D9DD2600007C4B4 /* Cocoa.framework */; };
+		97E6C5841D9DD2600007C4B4 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C57C1D9DD2600007C4B4 /* CoreAudio.framework */; };
+		97E6C5851D9DD2600007C4B4 /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C57D1D9DD2600007C4B4 /* ForceFeedback.framework */; };
+		97E6C5861D9DD2600007C4B4 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C57E1D9DD2600007C4B4 /* IOKit.framework */; };
+		97E6C5871D9DD2600007C4B4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6C57F1D9DD2600007C4B4 /* OpenGL.framework */; };
+		97F1AB331D9DDA4500F9AAC7 /* lizard_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97F1AB321D9DDA4500F9AAC7 /* lizard_main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		970D550C1EFCA4FC004FD238 /* text_default.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = text_default.cpp; path = ../../assets/export/text_default.cpp; sourceTree = "<group>"; };
+		97152EB91D9DBA5E006833C3 /* lizard_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lizard_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97152EC21D9DBA5E006833C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97152EC71D9DBA5F006833C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97152ECF1D9DBBBB006833C3 /* lizard_audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lizard_audio.cpp; path = ../../lizard_audio.cpp; sourceTree = "<group>"; };
+		97152ED11D9DBBBB006833C3 /* lizard_config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lizard_config.cpp; path = ../../lizard_config.cpp; sourceTree = "<group>"; };
+		97152ED21D9DBBBB006833C3 /* lizard_dogs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lizard_dogs.cpp; path = ../../lizard_dogs.cpp; sourceTree = "<group>"; };
+		97152ED31D9DBBBB006833C3 /* lizard_game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lizard_game.cpp; path = ../../lizard_game.cpp; sourceTree = "<group>"; };
+		97152ED41D9DBBBB006833C3 /* lizard_lizard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lizard_lizard.cpp; path = ../../lizard_lizard.cpp; sourceTree = "<group>"; };
+		97152ED61D9DBBBB006833C3 /* lizard_mac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lizard_mac.cpp; path = ../../lizard_mac.cpp; sourceTree = "<group>"; };
+		97152ED71D9DBBBB006833C3 /* lizard_options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lizard_options.cpp; path = ../../lizard_options.cpp; sourceTree = "<group>"; };
+		97152ED81D9DBBBB006833C3 /* lizard_ppu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lizard_ppu.cpp; path = ../../lizard_ppu.cpp; sourceTree = "<group>"; };
+		97152ED91D9DBBBB006833C3 /* lizard_text.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lizard_text.cpp; path = ../../lizard_text.cpp; sourceTree = "<group>"; };
+		97152EE91D9DBC9C006833C3 /* data_music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = data_music.cpp; path = ../../assets/export/data_music.cpp; sourceTree = "<group>"; };
+		97152EEA1D9DBC9C006833C3 /* data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = data.cpp; path = ../../assets/export/data.cpp; sourceTree = "<group>"; };
+		973BF9C62038CA3D00D259BE /* lizard_mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lizard_mac.m; path = ../../lizard_mac.m; sourceTree = "<group>"; };
+		976CAEB0200DF98800956CCB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		97AD35A21D9DBF4400BC47B3 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../../SDL2/build/lib/libSDL2.a; sourceTree = "<group>"; };
+		97AD35A31D9DBF4400BC47B3 /* libSDL2main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2main.a; path = ../../SDL2/build/lib/libSDL2main.a; sourceTree = "<group>"; };
+		97E6C5721D9DD1EC0007C4B4 /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
+		97E6C5741D9DD1F90007C4B4 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		97E6C5761D9DD20F0007C4B4 /* libm.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libm.dylib; path = usr/lib/libm.dylib; sourceTree = SDKROOT; };
+		97E6C5781D9DD2600007C4B4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		97E6C5791D9DD2600007C4B4 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		97E6C57A1D9DD2600007C4B4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		97E6C57B1D9DD2600007C4B4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		97E6C57C1D9DD2600007C4B4 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		97E6C57D1D9DD2600007C4B4 /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = System/Library/Frameworks/ForceFeedback.framework; sourceTree = SDKROOT; };
+		97E6C57E1D9DD2600007C4B4 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		97E6C57F1D9DD2600007C4B4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		97F1AB321D9DDA4500F9AAC7 /* lizard_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lizard_main.cpp; path = ../../lizard_main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97152EB61D9DBA5E006833C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976CAEB1200DF98800956CCB /* CoreVideo.framework in Frameworks */,
+				97E6C5801D9DD2600007C4B4 /* AudioToolbox.framework in Frameworks */,
+				97E6C5811D9DD2600007C4B4 /* AudioUnit.framework in Frameworks */,
+				97E6C5821D9DD2600007C4B4 /* Carbon.framework in Frameworks */,
+				97E6C5831D9DD2600007C4B4 /* Cocoa.framework in Frameworks */,
+				97E6C5841D9DD2600007C4B4 /* CoreAudio.framework in Frameworks */,
+				97E6C5851D9DD2600007C4B4 /* ForceFeedback.framework in Frameworks */,
+				97E6C5861D9DD2600007C4B4 /* IOKit.framework in Frameworks */,
+				97E6C5871D9DD2600007C4B4 /* OpenGL.framework in Frameworks */,
+				97E6C5771D9DD20F0007C4B4 /* libm.dylib in Frameworks */,
+				97E6C5751D9DD1F90007C4B4 /* libiconv.dylib in Frameworks */,
+				97E6C5731D9DD1EC0007C4B4 /* libobjc.dylib in Frameworks */,
+				97AD35A41D9DBF4400BC47B3 /* libSDL2.a in Frameworks */,
+				97AD35A51D9DBF4400BC47B3 /* libSDL2main.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97152EB01D9DBA5E006833C3 = {
+			isa = PBXGroup;
+			children = (
+				97152ECD1D9DBB75006833C3 /* Code */,
+				97152ECE1D9DBB83006833C3 /* Data */,
+				97152EBB1D9DBA5E006833C3 /* lizard */,
+				97152EBA1D9DBA5E006833C3 /* Products */,
+				97AD35A11D9DBF4300BC47B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		97152EBA1D9DBA5E006833C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97152EB91D9DBA5E006833C3 /* lizard_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97152EBB1D9DBA5E006833C3 /* lizard */ = {
+			isa = PBXGroup;
+			children = (
+				97152EC21D9DBA5E006833C3 /* Assets.xcassets */,
+				97152EC71D9DBA5F006833C3 /* Info.plist */,
+			);
+			path = lizard;
+			sourceTree = "<group>";
+		};
+		97152ECD1D9DBB75006833C3 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				973BF9C62038CA3D00D259BE /* lizard_mac.m */,
+				97F1AB321D9DDA4500F9AAC7 /* lizard_main.cpp */,
+				97152ECF1D9DBBBB006833C3 /* lizard_audio.cpp */,
+				97152ED11D9DBBBB006833C3 /* lizard_config.cpp */,
+				97152ED21D9DBBBB006833C3 /* lizard_dogs.cpp */,
+				97152ED31D9DBBBB006833C3 /* lizard_game.cpp */,
+				97152ED41D9DBBBB006833C3 /* lizard_lizard.cpp */,
+				97152ED61D9DBBBB006833C3 /* lizard_mac.cpp */,
+				97152ED71D9DBBBB006833C3 /* lizard_options.cpp */,
+				97152ED81D9DBBBB006833C3 /* lizard_ppu.cpp */,
+				97152ED91D9DBBBB006833C3 /* lizard_text.cpp */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		97152ECE1D9DBB83006833C3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				970D550C1EFCA4FC004FD238 /* text_default.cpp */,
+				97152EE91D9DBC9C006833C3 /* data_music.cpp */,
+				97152EEA1D9DBC9C006833C3 /* data.cpp */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		97AD35A11D9DBF4300BC47B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				976CAEB0200DF98800956CCB /* CoreVideo.framework */,
+				97E6C5781D9DD2600007C4B4 /* AudioToolbox.framework */,
+				97E6C5791D9DD2600007C4B4 /* AudioUnit.framework */,
+				97E6C57A1D9DD2600007C4B4 /* Carbon.framework */,
+				97E6C57B1D9DD2600007C4B4 /* Cocoa.framework */,
+				97E6C57C1D9DD2600007C4B4 /* CoreAudio.framework */,
+				97E6C57D1D9DD2600007C4B4 /* ForceFeedback.framework */,
+				97E6C57E1D9DD2600007C4B4 /* IOKit.framework */,
+				97E6C57F1D9DD2600007C4B4 /* OpenGL.framework */,
+				97E6C5741D9DD1F90007C4B4 /* libiconv.dylib */,
+				97E6C5761D9DD20F0007C4B4 /* libm.dylib */,
+				97E6C5721D9DD1EC0007C4B4 /* libobjc.dylib */,
+				97AD35A21D9DBF4400BC47B3 /* libSDL2.a */,
+				97AD35A31D9DBF4400BC47B3 /* libSDL2main.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97152EB81D9DBA5E006833C3 /* lizard_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97152ECA1D9DBA5F006833C3 /* Build configuration list for PBXNativeTarget "lizard_demo" */;
+			buildPhases = (
+				97152EB51D9DBA5E006833C3 /* Sources */,
+				97152EB61D9DBA5E006833C3 /* Frameworks */,
+				97152EB71D9DBA5E006833C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lizard_demo;
+			productName = lizard;
+			productReference = 97152EB91D9DBA5E006833C3 /* lizard_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97152EB11D9DBA5E006833C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Bradley Smith";
+				TargetAttributes = {
+					97152EB81D9DBA5E006833C3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 0;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 97152EB41D9DBA5E006833C3 /* Build configuration list for PBXProject "lizard_demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97152EB01D9DBA5E006833C3;
+			productRefGroup = 97152EBA1D9DBA5E006833C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97152EB81D9DBA5E006833C3 /* lizard_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97152EB71D9DBA5E006833C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97152EC31D9DBA5E006833C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97152EB51D9DBA5E006833C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97152EDA1D9DBBBB006833C3 /* lizard_audio.cpp in Sources */,
+				97152EE41D9DBBBB006833C3 /* lizard_text.cpp in Sources */,
+				97F1AB331D9DDA4500F9AAC7 /* lizard_main.cpp in Sources */,
+				97152EDE1D9DBBBB006833C3 /* lizard_game.cpp in Sources */,
+				97152EDF1D9DBBBB006833C3 /* lizard_lizard.cpp in Sources */,
+				97152EEB1D9DBC9C006833C3 /* data_music.cpp in Sources */,
+				97152EEC1D9DBC9C006833C3 /* data.cpp in Sources */,
+				97152EE31D9DBBBB006833C3 /* lizard_ppu.cpp in Sources */,
+				97152EE21D9DBBBB006833C3 /* lizard_options.cpp in Sources */,
+				97152EE11D9DBBBB006833C3 /* lizard_mac.cpp in Sources */,
+				97152EDD1D9DBBBB006833C3 /* lizard_dogs.cpp in Sources */,
+				973BF9C72038CA3D00D259BE /* lizard_mac.m in Sources */,
+				970D550D1EFCA4FC004FD238 /* text_default.cpp in Sources */,
+				97152EDC1D9DBBBB006833C3 /* lizard_config.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		97152EC81D9DBA5F006833C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../SDL2/build/include/SDL2;
+				LIBRARY_SEARCH_PATHS = ../../SDL2/build/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		97152EC91D9DBA5F006833C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../SDL2/build/include/SDL2;
+				LIBRARY_SEARCH_PATHS = ../../SDL2/build/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		97152ECB1D9DBA5F006833C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 0;
+				INFOPLIST_FILE = lizard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fwrapv",
+					"-D_DEBUG",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lizard.lizard-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97152ECC1D9DBA5F006833C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 0;
+				INFOPLIST_FILE = lizard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fwrapv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lizard.lizard-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97152EB41D9DBA5E006833C3 /* Build configuration list for PBXProject "lizard_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97152EC81D9DBA5F006833C3 /* Debug */,
+				97152EC91D9DBA5F006833C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97152ECA1D9DBA5F006833C3 /* Build configuration list for PBXNativeTarget "lizard_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97152ECB1D9DBA5F006833C3 /* Debug */,
+				97152ECC1D9DBA5F006833C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97152EB11D9DBA5E006833C3 /* Project object */;
+}
