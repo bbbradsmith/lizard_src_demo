@@ -726,7 +726,7 @@ def generate_cpp():
     for a in range(0,16):
         s += "\t{ "
         for b in range(0,16):
-            m = (a * b) / 15
+            m = (a * b) // 15
             if a>0 and b>0 and m<1:
                 m = 1
             s += "0x%X, " % m
@@ -909,7 +909,7 @@ def generate_asm():
     for a in range(0,16):
         s += ".byte "
         for b in range(0,16):
-            m = (a * b) / 15
+            m = (a * b) // 15
             if a>0 and b>0 and m<1:
                 m = 1
             s += "$%X," % m
